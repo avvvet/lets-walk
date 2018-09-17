@@ -1,0 +1,38 @@
+
+.div-card {
+  background-color :white;
+  padding: 10px;
+  width: 200px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.div-card-body {
+  margin-top: 2px;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.div-button-box {
+  margin-top: 10px;
+}
+.Map-div {
+  margin: auto;
+  width: 70%;
+  height: 70%;
+}
+
+.infoWindow {
+  background-color: yellow;
+}
+
+
+
