@@ -19,6 +19,7 @@ class MapItem extends Component {
 
   createInfoWindow(e, map, user) { 
     this.setMarkerUser(user);
+    
     const infoWindow = new window.google.maps.InfoWindow({
         content: "<div id='infoWindow'></div>", 
         position: { lat: e.latLng.lat(), lng: e.latLng.lng() }
@@ -26,6 +27,8 @@ class MapItem extends Component {
     infoWindow.addListener('domready', e => {
       render(<InfoWindow user = {this.state.marker_user}/>,document.getElementById('infoWindow'));
     })
+    
+    
     infoWindow.open(map)
   }
 
@@ -59,6 +62,7 @@ class MapItem extends Component {
               marker.addListener('click', e => {
                 this.createInfoWindow(e, map, user)
               })
+            
           });
           
         }}

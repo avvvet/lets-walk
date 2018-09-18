@@ -6,11 +6,13 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Ops from './components/Ops';
 import Navigate from './components/Navigate';
+import {Button, Image} from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <div>
       <BrowserRouter>
       <div>
         <Navigate />
@@ -23,6 +25,10 @@ class App extends Component {
         </Switch>
       </div>
       </BrowserRouter>
+      <div className="footer">
+        <div className="footer-text"><Image src="/assets/male.png" height={30}></Image> lets^walk <Image src="/assets/female.png" height={30}></Image> <strong>social walking app</strong> copyright 2019 - Awet Tsegazeab <Button bsStyle="success">Sign in</Button></div>
+      </div>
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {Nav, Navbar, NavItem , Image} from 'react-bootstrap';
+import {Nav, Navbar, NavItem , Image, Button} from 'react-bootstrap';
   
 class Navigate extends Component {
     
@@ -14,7 +14,7 @@ class Navigate extends Component {
                   <Image src="/assets/male.png" height={30}></Image>  
                 </Navbar.Brand>
                 <Navbar.Brand>
-                <a href="#">lets^walk</a>
+                <a href="">lets^walk</a>
                 </Navbar.Brand>
                 <Navbar.Brand>
                   <Image src="/assets/female.png" height={30}></Image>  
@@ -35,6 +35,16 @@ class Navigate extends Component {
                 <NavLink to="/contact">Contact</NavLink>
                 </NavItem>
             </Nav>
+
+            <Nav pullRight>
+            <NavItem eventKey={1} href="#">
+               
+            </NavItem>
+            <NavItem eventKey={2} href="#">
+             <Button bsSize="small">Sign in</Button>
+            </NavItem>
+            </Nav>
+
             </Navbar.Collapse>
             </Navbar>
         );
